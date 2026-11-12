@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isaiah Mulunda Talemwa · Emotional Support Listener</title>
+<meta name="description" content="Need someone to talk to? I’m here. Paid, confidential listening sessions: Regular Problem, Sad Story and Cry With You. Strictly business, no catching feelings.">
+<meta property="og:title" content="Isaiah Mulunda Talemwa · Need someone to talk to? I’m here.">
+<meta property="og:description" content="Paid, confidential listening sessions. Strictly business, no catching feelings.">
+<meta property="og:image" content="assets/poster.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1b1747; --navy-2:#241f5c; --ink:#12102f;
+  --purple:#6c3fd0; --purple-2:#8b63ec; --yellow:#ffd24d; --red:#c62828;
+  --white:#fff; --muted:#b9b6dc; --card:#ffffff; --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--navy);color:var(--white);line-height:1.6;overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1100px,92%);margin-inline:auto}
+section{padding:90px 0;position:relative}
+h1,h2,h3{line-height:1.12;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:800;margin-bottom:14px}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--yellow);margin-bottom:14px}
+.lead{color:var(--muted);font-size:1.08rem;max-width:620px}
+.center{text-align:center}.center .lead{margin-inline:auto}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(27,23,71,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:800;text-decoration:none;font-size:1.1rem}
+.logo span{color:var(--yellow)}
+nav ul{display:flex;gap:26px;list-style:none}
+nav ul a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--muted);transition:.2s}
+nav ul a:hover{color:var(--white)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:.98rem;transition:transform .2s,box-shadow .2s;border:0;cursor:pointer}
+.btn-primary{background:var(--yellow);color:var(--ink);box-shadow:0 10px 30px -10px rgba(255,210,77,.7)}
+.btn-primary:hover{transform:translateY(-3px)}
+.btn-ghost{border:2px solid rgba(255,255,255,.25);color:var(--white)}
+.btn-ghost:hover{border-color:var(--yellow);color:var(--yellow)}
+nav .btn{padding:10px 20px;font-size:.88rem}
+
+/* hero */
+.hero{padding:80px 0 100px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;pointer-events:none}
+.blob.a{width:520px;height:520px;background:var(--purple);right:-160px;top:-180px;opacity:.95}
+.blob.b{width:380px;height:380px;background:#3d3190;left:-140px;bottom:-120px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:8px 16px;border-radius:999px;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:26px}
+.dot{width:9px;height:9px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.7);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.hero h1{font-size:clamp(2.6rem,7vw,4.8rem);font-weight:800;text-transform:uppercase}
+.hero h1 em{display:block;font-style:normal;color:var(--yellow);margin-top:12px;font-size:.62em}
+.hero p{margin:22px 0 34px;color:var(--muted);font-size:1.12rem;max-width:520px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-art{position:relative;z-index:1}
+.float{animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-14px)}}
+
+/* stats */
+.stats{padding:0;margin-top:-30px;z-index:2}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px;text-align:center}
+.stat b{display:block;font-size:1.7rem;color:var(--yellow);font-weight:800}
+.stat span{font-size:.85rem;color:var(--muted)}
+
+/* services */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.card{background:var(--card);color:var(--ink);border-radius:var(--radius);padding:34px 30px;position:relative;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-8px);box-shadow:0 30px 60px -25px rgba(0,0,0,.6)}
+.card .icon{width:64px;height:64px;border-radius:18px;background:#efe9ff;display:grid;place-items:center;margin-bottom:22px}
+.card h3{font-size:1.5rem;font-weight:800}
+.card .sub{color:#5b5878;font-size:.95rem;margin:6px 0 20px}
+.price{font-size:3rem;font-weight:800;color:var(--purple);line-height:1}
+.price small{font-size:.9rem;color:#8a87a6;font-weight:500}
+.card ul{list-style:none;margin:22px 0 26px;font-size:.93rem;color:#3b3860;flex:1}
+.card li{padding:7px 0 7px 28px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:13px;width:16px;height:16px;border-radius:50%;background:var(--purple) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.3l2.3 2.3 4.7-4.9' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.card .btn{justify-content:center;background:var(--navy);color:var(--white)}
+.card .btn:hover{background:var(--purple)}
+.card.featured{background:linear-gradient(160deg,var(--purple) 0%,#4b27a8 100%);color:var(--white);transform:scale(1.04)}
+.card.featured:hover{transform:scale(1.04) translateY(-8px)}
+.card.featured .icon{background:rgba(255,255,255,.18)}
+.card.featured .sub,.card.featured ul{color:#e6dcff}
+.card.featured .price{color:var(--yellow)}
+.card.featured .price small{color:#cdbdf7}
+.card.featured li::before{background-color:var(--yellow);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.3l2.3 2.3 4.7-4.9' fill='none' stroke='%2312102f' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.card.featured .btn{background:var(--yellow);color:var(--ink)}
+.tag{position:absolute;top:-14px;right:24px;background:var(--yellow);color:var(--ink);font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+.note{margin-top:30px;color:var(--muted);font-size:.9rem}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:50px;counter-reset:s}
+.step{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:30px 24px;position:relative}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--purple);font-weight:800;margin-bottom:18px}
+.step h3{font-size:1.1rem;margin-bottom:8px}
+.step p{color:var(--muted);font-size:.92rem}
+
+/* rule */
+.rule{background:linear-gradient(135deg,#b71c1c,var(--red));border-radius:30px;padding:56px 48px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;box-shadow:0 40px 80px -40px rgba(198,40,40,.8)}
+.rule h2{text-transform:uppercase;font-size:clamp(1.6rem,3.6vw,2.4rem)}
+.rule p{color:#ffe4e4;margin-bottom:18px}
+.rule ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;font-size:.92rem}
+.rule li::before{content:"✕ ";font-weight:800;color:var(--yellow)}
+.penalty{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.penalty span{background:rgba(0,0,0,.25);padding:10px 18px;border-radius:14px;font-size:.88rem;font-weight:600}
+.penalty b{color:var(--yellow)}
+
+/* poster */
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+.phone{background:#0b0a22;border-radius:38px;padding:12px;box-shadow:0 40px 80px -30px #000,0 0 0 2px rgba(255,255,255,.1);max-width:340px;margin-inline:auto;transform:rotate(-3deg);transition:transform .3s}
+.phone:hover{transform:rotate(0)}
+.phone img{border-radius:28px;width:100%}
+.checks{list-style:none;margin:26px 0 32px}
+.checks li{display:flex;gap:14px;padding:10px 0;color:var(--muted)}
+.checks b{color:var(--white)}
+.checks svg{flex:none;margin-top:3px}
+
+/* faq */
+details{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:20px 24px;margin-bottom:14px}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--yellow);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin-top:12px;color:var(--muted);font-size:.95rem}
+.faq{max-width:760px;margin:44px auto 0}
+
+/* contact */
+.contact{background:var(--ink);border-radius:36px;padding:70px 40px;position:relative;overflow:hidden}
+.contact .blob{width:360px;height:360px;background:var(--purple);right:-120px;top:-140px;opacity:.7}
+.contact>*{position:relative}
+.contact h2{text-transform:uppercase}
+.channels{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:34px 0 20px}
+.btn-wa{background:#25d366;color:#06301a}
+.btn-ph{background:var(--purple);color:#fff}
+.btn-doc{border:2px dashed rgba(255,255,255,.3);color:var(--white)}
+.small{font-size:.82rem;color:var(--muted);font-style:italic}
+
+footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid rgba(255,255,255,.08)}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  nav ul{display:none}
+  .hero .wrap,.split,.rule{grid-template-columns:1fr}
+  .hero-art{max-width:380px;margin-inline:auto}
+  .grid3{grid-template-columns:1fr}
+  .card.featured,.card.featured:hover{transform:none}
+  .steps{grid-template-columns:1fr 1fr}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .rule{padding:40px 26px}
+  .rule ul{grid-template-columns:1fr}
+  .rule svg{margin-inline:auto}
+}
+@media(max-width:520px){.steps{grid-template-columns:1fr}section{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo">Isaiah<span>.</span>listens</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#rules">The rules</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#book" class="btn btn-primary">Book a session</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="blob a"></div><div class="blob b"></div>
+  <div class="wrap">
+    <div>
+      <div class="pill"><span class="dot"></span> Now open for bookings</div>
+      <h1>Need someone to talk to?<em>I’m here.</em></h1>
+      <p>Hi, I’m <strong>Isaiah Mulunda Talemwa</strong>. I offer paid, time-bound, fully confidential listening sessions: a warm ear and an honest perspective, with a clear agreement and zero judgment.</p>
+      <div class="cta">
+        <a href="#book" class="btn btn-primary">Book your session →</a>
+        <a href="#services" class="btn btn-ghost">See packages</a>
+      </div>
+    </div>
+    <div class="hero-art float" aria-hidden="true">
+      <svg viewBox="0 0 440 400" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b63ec"/><stop offset="1" stop-color="#4b27a8"/></linearGradient>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe27a"/><stop offset="1" stop-color="#ffb938"/></linearGradient>
+        </defs>
+        <circle cx="220" cy="200" r="170" fill="#ffffff" opacity=".06"/>
+        <circle cx="220" cy="200" r="120" fill="#ffffff" opacity=".07"/>
+        <!-- bubble 1 -->
+        <path d="M70 70h190a28 28 0 0 1 28 28v76a28 28 0 0 1-28 28H140l-42 36v-36H70a28 28 0 0 1-28-28V98a28 28 0 0 1 28-28z" fill="url(#g1)"/>
+        <rect x="72" y="104" width="150" height="12" rx="6" fill="#fff" opacity=".9"/>
+        <rect x="72" y="130" width="190" height="12" rx="6" fill="#fff" opacity=".55"/>
+        <rect x="72" y="156" width="110" height="12" rx="6" fill="#fff" opacity=".55"/>
+        <!-- bubble 2 -->
+        <path d="M200 236h170a28 28 0 0 1 28 28v52a28 28 0 0 1-28 28h-26v34l-40-34H200a28 28 0 0 1-28-28v-52a28 28 0 0 1 28-28z" fill="url(#g2)"/>
+        <rect x="204" y="266" width="130" height="12" rx="6" fill="#12102f" opacity=".85"/>
+        <rect x="204" y="292" width="90" height="12" rx="6" fill="#12102f" opacity=".45"/>
+        <!-- heart with shield -->
+        <g transform="translate(300 40)">
+          <circle r="44" fill="#c62828"/>
+          <path d="M0 18c-22-14-26-26-26-34a14 14 0 0 1 26-7 14 14 0 0 1 26 7c0 8-4 20-26 34z" fill="#fff"/>
+          <path d="M-36 -36L36 36" stroke="#ffd24d" stroke-width="7" stroke-linecap="round"/>
+        </g>
+        <!-- tear -->
+        <path d="M350 170c14 20 22 32 22 44a22 22 0 0 1-44 0c0-12 8-24 22-44z" fill="#7dd3fc"/>
+        <circle cx="62" cy="262" r="8" fill="#ffd24d"/><circle cx="410" cy="120" r="6" fill="#8b63ec"/><circle cx="110" cy="330" r="5" fill="#fff" opacity=".6"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap reveal">
+    <div class="stat"><b>3</b><span>session packages</span></div>
+    <div class="stat"><b>100%</b><span>confidential</span></div>
+    <div class="stat"><b>12 hrs</b><span>free rescheduling notice</span></div>
+    <div class="stat"><b>0</b><span>feelings allowed 😉</span></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Services &amp; pricing</span>
+      <h2>Pick the session that fits your story</h2>
+      <p class="lead">Every package is per session, payable in advance. Session length is agreed before we start.</p>
+    </div>
+
+    <div class="grid3">
+      <article class="card reveal">
+        <div class="icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#6c3fd0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6A8 8 0 1 1 21 12z"/><path d="M8.5 11h7M8.5 14h4"/></svg>
+        </div>
+        <h3>Regular Problem</h3>
+        <p class="sub">Everyday stress and venting</p>
+        <div class="price">$25 <small>/ session</small></div>
+        <ul>
+          <li>Work stress &amp; small drama</li>
+          <li>General venting, no filter needed</li>
+          <li>Honest perspective, not lectures</li>
+        </ul>
+        <a href="#book" class="btn">Book this</a>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#6c3fd0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 6.6a5 5 0 0 0-7.1 0L12 8.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 22l8.8-8.3a5 5 0 0 0 0-7.1z"/><path d="M12 8.3l-2 3.2 3 2-1.5 3.2"/></svg>
+        </div>
+        <h3>Sad Story</h3>
+        <p class="sub">Heartbreak and the full story</p>
+        <div class="price">$75 <small>/ session</small></div>
+        <ul>
+          <li>Heartbreak &amp; disappointments</li>
+          <li>Life updates that need a full ear</li>
+          <li>Take all the time your story needs</li>
+        </ul>
+        <a href="#book" class="btn">Book this</a>
+      </article>
+
+      <article class="card featured reveal">
+        <span class="tag">Premium</span>
+        <div class="icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ffd24d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7c3.2 4.2 5.5 7.2 5.5 10.3a5.5 5.5 0 0 1-11 0c0-3.1 2.3-6.1 5.5-10.3z"/><path d="M9.6 14.3a2.6 2.6 0 0 0 2.4 1.8"/></svg>
+        </div>
+        <h3>Cry With You</h3>
+        <p class="sub">Premium: I cry with you</p>
+        <div class="price">$200 <small>/ session</small></div>
+        <ul>
+          <li>Full emotional presence</li>
+          <li>I may cry alongside you</li>
+          <li>The ultimate “you’re not alone” experience</li>
+        </ul>
+        <a href="#book" class="btn">Book this</a>
+      </article>
+    </div>
+    <p class="note reveal">* Fees are non-refundable once a session has started. Late cancellations (under 12 hours’ notice) forfeit 50% of the fee.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="background:var(--ink)">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Four simple steps</h2>
+      <p class="lead">No complicated process. Just a clear agreement and a real conversation.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Reach out</h3><p>DM or call me on WhatsApp and tell me which package you’d like.</p></div>
+      <div class="step reveal"><h3>Sign the agreement</h3><p>The service agreement must be signed before your first session.</p></div>
+      <div class="step reveal"><h3>Pay in advance</h3><p>Payment is made before the session begins to confirm your slot.</p></div>
+      <div class="step reveal"><h3>Let it out</h3><p>Talk, vent, cry or laugh. Everything stays between us.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RULES -->
+<section id="rules">
+  <div class="wrap">
+    <div class="rule reveal">
+      <svg width="150" height="150" viewBox="0 0 150 150" aria-hidden="true">
+        <circle cx="75" cy="75" r="70" fill="#fff"/>
+        <path d="M75 108c-30-19-36-35-36-46a19 19 0 0 1 36-9 19 19 0 0 1 36 9c0 11-6 27-36 46z" fill="#c62828"/>
+        <circle cx="75" cy="75" r="62" fill="none" stroke="#ffd24d" stroke-width="9"/>
+        <path d="M31 119L119 31" stroke="#ffd24d" stroke-width="9" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <h2>Strictly business: no catching feelings</h2>
+        <p>Warmth, kindness and a good listening ear are part of the product, not a romantic invitation. Clause 6 of the agreement explains exactly what that means.</p>
+        <ul>
+          <li>No love messages</li>
+          <li>No “good morning my love” texts</li>
+          <li>No “you’re the only one who understands me”</li>
+          <li>No planning a future together</li>
+        </ul>
+        <div class="penalty">
+          <span>1st: <b>Warning</b></span>
+          <span>Continued: <b>$500 penalty</b></span>
+          <span>Repeat offence: <b>$1,000</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POSTER / AGREEMENT -->
+<section style="background:var(--ink)">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="phone"><a href="assets/poster.jpg"><img src="assets/poster.jpg" alt="Poster: Need someone to talk to? I’m here. Regular Problem $25, Sad Story $75, Cry With You $200." loading="lazy"></a></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Clear terms, no surprises</span>
+      <h2>Everything is in writing</h2>
+      <p class="lead">A short, plain-language agreement protects both of us.</p>
+      <ul class="checks">
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffd24d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span><b>Confidentiality.</b> I won’t repeat, screenshot, post or gossip about any session. Exceptions only where the law requires it or to protect someone from serious harm.</span></li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffd24d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span><b>A listening ear, not therapy.</b> This is not a medical, psychological or counselling service and doesn’t replace a licensed professional.</span></li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffd24d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span><b>Mutual respect.</b> No abuse, harassment or unreasonable late-night demands.</span></li>
+      </ul>
+      <a href="assets/Emotional_Support_Service_Agreement.pdf" class="btn btn-ghost" download>⬇ Download the agreement (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Good questions</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Is this therapy?</summary><p>No. This is a paid listening and emotional-support service. It is not medical, psychological or counselling care. In a crisis or emergency, please contact a qualified professional or your local emergency services.</p></details>
+      <details><summary>How do I pay?</summary><p>Fees are paid in advance, before the session begins. Message me to confirm the payment details for your package.</p></details>
+      <details><summary>Can I reschedule?</summary><p>Yes, with at least 12 hours’ notice. Late cancellations forfeit 50% of the fee.</p></details>
+      <details><summary>Is what I share really private?</summary><p>Yes. Nothing you share is repeated, screenshotted, posted or gossiped about. The only exceptions are where disclosure is required by law or to protect someone from serious harm.</p></details>
+      <details><summary>What happens if feelings are caught?</summary><p>One warning is issued. If it continues, the penalty in Clause 6 applies. The Listener’s decision is final, binding and not open to debate, tears or flowers.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section id="book" style="padding-top:20px">
+  <div class="wrap">
+    <div class="contact center reveal">
+      <div class="blob"></div>
+      <span class="eyebrow">Ready when you are</span>
+      <h2>Book your session: DM or call Isaiah</h2>
+      <p class="lead">Message me your preferred package and time. Agreement must be signed and payment made in advance before the first session.</p>
+      <div class="channels">
+        <a class="btn btn-wa" href="https://wa.me/256750513479?text=Hi%20Isaiah%2C%20I%27d%20like%20to%20book%20a%20session." target="_blank" rel="noopener">WhatsApp me</a>
+        <a class="btn btn-ph" href="tel:+256750513479">Call +256 750 513 479</a>
+        <a class="btn btn-doc" href="assets/Emotional_Support_Service_Agreement.pdf" download>Get the agreement</a>
+      </div>
+      <p class="small">Terms and conditions apply. Agreement must be signed before the first session.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Isaiah Mulunda Talemwa · Strictly professional · No catching feelings</div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
